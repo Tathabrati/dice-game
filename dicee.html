@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Dicee</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Dicee Game</h1>
+    <div id="player-names">
+      <input type="text" id="player1-name-input" placeholder="Player 1 Name">
+      <input type="text" id="player2-name-input" placeholder="Player 2 Name">
+      <button id="start-game-btn">Start Game</button>
+    </div>
+    <button id="roll-btn" style="display:none;">Roll Dice</button>
+    <div class="dice" style="display:none;">
+      <p id="player1-name">Player 1</p>
+      <img class="dice-img" id="dice1" src="images/dice6.png" alt="Dice">
+      <span id="player1-score">0</span>
+    </div>
+    <div class="dice" style="display:none;">
+      <p id="player2-name">Player 2</p>
+      <img class="dice-img" id="dice2" src="images/dice6.png" alt="Dice">
+      <span id="player2-score">0</span>
+    </div>
+    <div id="result" style="display:none;"></div>
+    <button id="reset-btn" style="display:none;">Reset Game</button>
+    <button id="instructions-btn">Instructions</button>
+    <div id="instructions" style="display: none;">
+      <h2>How to Play</h2>
+      <p>Click the "Roll Dice" button to roll the dice for both players. The player with the higher score wins the round. The first player to reach the score limit wins the game. Click "Reset Game" to start over.</p>
+    </div>
+    <div id="history" style="display: none;">
+      <h2>Last 5 Rolls</h2>
+      <ul id="roll-history"></ul>
+    </div>
+    <div id="high-score">High Score: 0</div>
+    <div id="winner-status" style="display:none;"></div>
+  </div>
+  <footer>
+    Tathabrati Sarkar
+  </footer>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+</html>
